@@ -9,4 +9,5 @@
  (synopsis "A hello world example for GH Actions")
  (description "Hello, World! GitHub Actions!")
  (depends
-  dune))
+   dune
+   ppx_inline_test))
