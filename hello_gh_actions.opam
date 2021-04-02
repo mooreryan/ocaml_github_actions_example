@@ -4,6 +4,7 @@ synopsis: "A hello world example for GH Actions"
 description: "Hello, World! GitHub Actions!"
 depends: [
   "dune" {>= "2.8"}
+  "ppx_inline_test"
   "odoc" {with-doc}
 ]
 build: [
