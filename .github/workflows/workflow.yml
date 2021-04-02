@@ -10,12 +10,12 @@ jobs:
       fail-fast: false
       matrix:
         os:
-          - macos-latest
+          # - macos-latest
           - ubuntu-latest
-          - windows-latest
+          # - windows-latest
         ocaml-version:
           - 4.12.0
-          - 4.11.0
+          # - 4.11.0
 
     runs-on: ${{ matrix.os }}
 
@@ -28,9 +28,9 @@ jobs:
         with:
           ocaml-version: ${{ matrix.ocaml-version }}
 
-      - run: opam pin add hello.dev . --no-action
+      - run: opam pin add hello_gh_actions.dev . --no-action
 
-      - run: opam depext hello --yes --with-doc --with-test
+      - run: opam depext hello_gh_actions --yes --with-doc --with-test
 
       - run: opam install . --deps-only --with-doc --with-test
 
