@@ -1,2 +1,4 @@
 (executable (name hello_world)
-  (libraries hello))
+ (libraries hello)
+ (public_name hello_world)
+ (package hello_gh_actions))

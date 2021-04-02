@@ -1,1 +1,2 @@
-(library (name hello))
+(library (name hello)
+ (public_name hello_gh_actions.hello))
